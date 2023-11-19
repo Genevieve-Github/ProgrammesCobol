@@ -8,7 +8,7 @@ Le code source se trouve dans le programme qui a l'extension .cbl.
 
 Ce projet de programmes écrits en langage Cobol fait partie de ma formation professionalisante chez Simplon.co à Lille.
 
-Ils ont été écrits sous VSCode, avec le compilateur GnuCobol.
+Ils sont écrits sous VSCode, avec le compilateur GnuCobol.
 
 ### 🚀 Exécution des programmes
 
