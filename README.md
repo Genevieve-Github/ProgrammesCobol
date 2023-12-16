@@ -16,10 +16,17 @@ Ils sont écrits sous VSCode, avec le compilateur GnuCobol.
 L'exécutable est le programme qui n'a pas l'extension .cbl.
 
 Par exemple: 
+<<<<<<< HEAD
 - Comparaison entre deux sommes:                     ./Compare
 - Verification de l'existance d'un fichie            ./Existe
 - Vérification et création de fichier si inexistant: ./Creation
 - Lecture de fichier:                                ./Boucle
+=======
+- Comparaison entre deux sommes:                     ./Algo1
+- Verification de l'existance d'un fichie            ./Algo2 
+- Vérification et création de fichier si inexistant: ./Algo4
+- Lecture de fichier:                                ./Algo4
+>>>>>>> origin/main
 etc.......
 ```
 
