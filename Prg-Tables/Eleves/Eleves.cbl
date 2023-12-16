@@ -144,7 +144,8 @@
                    UNTIL NOT WS-STATUS-FILE-INPUT-OK
            ELSE
                DISPLAY "--> ERREUR OUVERTURE FICHIER INPUT STATUS: "
-               WS-STATUS-FILE-OUTPUT.
+               WS-STATUS-FILE-OUTPUT
+           END-IF.
            
            DISPLAY "NOMBRE D'ENREGISTREMENTS LUS: "
                WS-COMPTEUR-FILE-INPUT.
@@ -154,14 +155,16 @@
            OPEN OUTPUT FILE-OUTPUT.
            
            IF NOT WS-STATUS-FILE-OUTPUT-OK
-               OPEN EXTEND FILE-OUTPUT.
+               OPEN EXTEND FILE-OUTPUT
+           END-IF.
            
            IF WS-STATUS-FILE-OUTPUT-OK
                PERFORM LECTURE-TABLE-DEBUT THRU
                LECTURE-TABLE-FIN
            ELSE
                DISPLAY "--> ERREUR OUVERTURE FICHIER OUTPUT STATUS: "
-               WS-STATUS-FILE-OUTPUT.
+               WS-STATUS-FILE-OUTPUT
+           END-IF.
            
            CLOSE FILE-OUTPUT.
            
@@ -198,7 +201,9 @@
            IF WS-STATUS-FILE-INPUT-OK
                ADD 1 TO WS-COMPTEUR-FILE-INPUT
                PERFORM CHARGEMENT-TABLE-DEBUT THRU
-                       CHARGEMENT-TABLE-FIN.
+                       CHARGEMENT-TABLE-FIN
+           END-IF.
+
        LECTURE-FIN.
            EXIT.
        
@@ -213,7 +218,9 @@
                IF WS-INDICE = WS-MAX-ELEVE
                    DISPLAY "--> ! PLUS DE " WS-MAX-ELEVE " ELEVES! "
                ELSE
-                   ADD 1 TO WS-INDICE.
+                   ADD 1 TO WS-INDICE
+               END-IF
+           END-IF.
        
            IF WS-REC02
                IF WS-INDICE2 = WS-MAX-NOTE
@@ -223,19 +230,23 @@
                    REC01-NOM " "
                    REC01-AGE
                ELSE
-                   ADD 1 TO WS-INDICE2.
+                   ADD 1 TO WS-INDICE2
+               END-IF
+           END-IF.
 
            IF WS-REC01
                MOVE ZEROES TO WS-INDICE2
                MOVE REC01-PRENOM TO WS-TAB-PRENOM (WS-INDICE)
                MOVE REC01-NOM TO WS-TAB-NOM (WS-INDICE)
-               MOVE REC01-AGE TO WS-TAB-AGE (WS-INDICE).
+               MOVE REC01-AGE TO WS-TAB-AGE (WS-INDICE)
+           END-IF.
            
            IF WS-REC02
                MOVE REC02-MATIERE TO
                WS-TAB-MATIERE (WS-INDICE WS-INDICE2)
                MOVE REC02-COEFF TO WS-TAB-COEFF (WS-INDICE WS-INDICE2)
-               MOVE REC02-NOTE TO WS-TAB-NOTE (WS-INDICE WS-INDICE2).
+               MOVE REC02-NOTE TO WS-TAB-NOTE (WS-INDICE WS-INDICE2)
+           END-IF.
        
        CHARGEMENT-TABLE-FIN.
            EXIT.
@@ -281,7 +292,8 @@
       ****** ECRITURE ENTETE
            IF WS-COMPTEUR-FILE-OUTPUT = ZEROES
                WRITE REC-OUTPUT FROM ENTETE
-               ADD 1 TO WS-COMPTEUR-FILE-OUTPUT.
+               ADD 1 TO WS-COMPTEUR-FILE-OUTPUT
+           END-IF.
        
            IF WS-TAB-MATIERE(WS-INDICE, WS-INDICE2) NOT = SPACES
                MOVE WS-TAB-PRENOM (WS-INDICE) TO OUTPUT-PRENOM
@@ -292,7 +304,8 @@
                MOVE WS-TAB-COEFF (WS-INDICE, WS-INDICE2) TO OUTPUT-COEFF
                MOVE WS-TAB-NOTE (WS-INDICE, WS-INDICE2) TO OUTPUT-NOTE
                WRITE REC-OUTPUT FROM WS-REC-OUTPUT AFTER ADVANCING 1
-               ADD 1 TO WS-COMPTEUR-FILE-OUTPUT.
+               ADD 1 TO WS-COMPTEUR-FILE-OUTPUT
+           END-IF.
        
        ECRITURE-OUTPUT-FIN.
            EXIT.
