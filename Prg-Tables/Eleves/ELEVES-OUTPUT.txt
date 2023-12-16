@@ -1,0 +1,49 @@
+NOM     PRENOM AGE MATIERE                   COEFF. NOTE                                                                
+ASSIN   MARC    18 SYSTEME D'INFORMATION      1,0  10,00                                                                
+ASSIN   MARC    18 PROGRAMMATION VBA          1,0  07,25                                                                
+ASSIN   MARC    18 SQL                        2,0  06,75                                                                
+ASSIN   MARC    18 SCHEMA RELATIONNEL         2,0  13,00                                                                
+ASSIN   MARC    18 RESEAUX INFORMATIQUES      1,0  11,00                                                                
+ASSIN   MARC    18 MODELISATIONS DE PROCESSUS 1,5  09,50                                                                
+BONNOT  JEAN    20 SYSTEME D'INFORMATION      1,0  11,50                                                                
+BONNOT  JEAN    20 PROGRAMMATION VBA          1,0  13,00                                                                
+BONNOT  JEAN    20 SQL                        2,0  16,00                                                                
+BONNOT  JEAN    20 SCHEMA RELATIONNEL         2,0  10,00                                                                
+BONNOT  JEAN    20 RESEAUX INFORMATIQUES      1,0  12,00                                                                
+BONNOT  JEAN    20 MODELISATIONS DE PROCESSUS 1,5  10,00                                                                
+INGALE  MARTHE  20 SYSTEME D'INFORMATION      1,0  15,00                                                                
+INGALE  MARTHE  20 PROGRAMMATION VBA          1,0  09,00                                                                
+INGALE  MARTHE  20 SQL                        2,0  08,75                                                                
+INGALE  MARTHE  20 SCHEMA RELATIONNEL         2,0  14,00                                                                
+INGALE  MARTHE  20 RESEAUX INFORMATIQUES      1,0  06,50                                                                
+INGALE  MARTHE  20 MODELISATIONS DE PROCESSUS 1,5  10,00                                                                
+INNIC   MARTHE  19 SYSTEME D'INFORMATION      1,0  12,50                                                                
+INNIC   MARTHE  19 PROGRAMMATION VBA          1,0  09,50                                                                
+INNIC   MARTHE  19 SQL                        2,0  07,25                                                                
+INNIC   MARTHE  19 SCHEMA RELATIONNEL         2,0  15,00                                                                
+INNIC   MARTHE  19 RESEAUX INFORMATIQUES      1,0  13,00                                                                
+INNIC   MARTHE  19 MODELISATIONS DE PROCESSUS 1,5  07,25                                                                
+HOMALY  ANNE    21 SYSTEME D'INFORMATION      1,0  10,00                                                                
+HOMALY  ANNE    21 PROGRAMMATION VBA          1,0  11,00                                                                
+HOMALY  ANNE    21 SQL                        2,0  15,50                                                                
+HOMALY  ANNE    21 SCHEMA RELATIONNEL         2,0  18,00                                                                
+HOMALY  ANNE    21 RESEAUX INFORMATIQUES      1,0  14,00                                                                
+HOMALY  ANNE    21 MODELISATIONS DE PROCESSUS 1,5  10,00                                                                
+KONDAT  ANNA    18 SYSTEME D'INFORMATION      1,0  05,50                                                                
+KONDAT  ANNA    18 PROGRAMMATION VBA          1,0  06,25                                                                
+KONDAT  ANNA    18 SQL                        2,0  09,75                                                                
+KONDAT  ANNA    18 SCHEMA RELATIONNEL         2,0  07,50                                                                
+KONDAT  ANNA    18 RESEAUX INFORMATIQUES      1,0  06,50                                                                
+KONDAT  ANNA    18 MODELISATIONS DE PROCESSUS 1,5  09,50                                                                
+MANTORT GERARD  19 SYSTEME D'INFORMATION      1,0  10,00                                                                
+MANTORT GERARD  19 PROGRAMMATION VBA          1,0  11,00                                                                
+MANTORT GERARD  19 SQL                        2,0  18,75                                                                
+MANTORT GERARD  19 SCHEMA RELATIONNEL         2,0  17,50                                                                
+MANTORT GERARD  19 RESEAUX INFORMATIQUES      1,0  12,50                                                                
+MANTORT GERARD  19 MODELISATIONS DE PROCESSUS 1,5  11,00                                                                
+OCHON   PAUL    21 SYSTEME D'INFORMATION      1,0  04,50                                                                
+OCHON   PAUL    21 PROGRAMMATION VBA          1,0  06,50                                                                
+OCHON   PAUL    21 SQL                        2,0  03,25                                                                
+OCHON   PAUL    21 SCHEMA RELATIONNEL         2,0  06,50                                                                
+OCHON   PAUL    21 RESEAUX INFORMATIQUES      1,0  09,25                                                                
+OCHON   PAUL    21 MODELISATIONS DE PROCESSUS 1,5  08,75                                                                
